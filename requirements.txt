@@ -1,0 +1,6 @@
+jax
+jaxlib
+pytest
+tensorboardX
+hydra-core
+flax

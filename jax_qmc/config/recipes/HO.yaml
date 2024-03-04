@@ -1,0 +1,19 @@
+defaults:
+  - base_config
+  - _self_
+  - override hamiltonian: harmonic
+
+sampler:
+  n_particles:  6
+  n_spin_up:    4
+  n_protons:    0
+  n_void_steps: 500
+  n_walkers:    500
+  walk_precision: float32
+
+wavefunction:
+  mean_subtract: False
+  activation: celu
+  confinement: 0.5
+  mirror: False
+  time_reversal: False

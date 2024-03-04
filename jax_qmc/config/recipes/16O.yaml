@@ -1,0 +1,26 @@
+defaults:
+  - base_config
+  - _self_
+
+sampler:
+  n_particles:  16
+  n_spin_up:    8
+  n_protons:    8
+  n_void_steps: 500
+  n_walkers:    50
+  walk_precision: float32
+
+# optimizer:
+#   delta:
+#     steps: 
+
+wavefunction:
+  mean_subtract: True
+  backflow:      True
+  mirror:        True
+  time_reversal: True
+  activation: celu
+  confinement: 0.05
+
+
+iterations: 1500

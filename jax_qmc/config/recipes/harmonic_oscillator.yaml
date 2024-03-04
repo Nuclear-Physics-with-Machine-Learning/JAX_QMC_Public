@@ -1,0 +1,28 @@
+defaults:
+  - base_config
+  - _self_
+  - override hamiltonian: harmonic
+
+optimizer:
+  delta: 0.001
+  solver: Null
+
+sampler:
+  n_particles: 2
+  n_dim:       1
+  n_walkers:   500
+  n_void_steps: 500
+
+wavefunction:
+  mean_subtract: False
+  activation: celu
+  correlator_cfg:
+    individual_cfg:
+      layers: [24,24,24,]
+    aggregate_cfg:
+      layers: [24,24,1]
+  slater_cfg:
+    spatial_cfg:
+      layers: [24,24,24,1]
+    active: True
+  confinement: 0.25
