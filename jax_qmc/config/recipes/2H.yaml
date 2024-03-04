@@ -1,0 +1,16 @@
+defaults:
+  - base_config
+  - _self_
+
+sampler:
+  n_particles:  2
+  n_spin_up:    2
+  n_protons:    1
+  n_void_steps: 500
+  n_walkers:    20000
+  kick_size:    0.5
+  walk_precision: float32
+
+wavefunction:
+  mean_subtract: True
+  confinement: 0.5

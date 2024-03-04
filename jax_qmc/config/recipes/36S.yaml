@@ -1,0 +1,23 @@
+defaults:
+  - base_config
+  - _self_
+  - override hamiltonian: nuclear
+
+sampler:
+  n_particles:  36
+  n_spin_up:    18
+  n_protons:    16
+  n_void_steps: 500
+  n_walkers:    50
+  kick_size:    0.1
+  walk_precision: float32
+
+wavefunction:
+  mean_subtract: True
+  mirror:        True
+  time_reversal: False
+  backflow:      True
+  activation:    celu
+  confinement:   0.05
+
+iterations: 1500

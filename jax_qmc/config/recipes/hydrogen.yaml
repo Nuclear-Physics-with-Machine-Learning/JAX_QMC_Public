@@ -1,0 +1,21 @@
+defaults:
+  - base_config
+  - _self_
+  - override hamiltonian: atomic
+
+
+sampler:
+  n_particles:  1
+  n_spin_up:    1
+  n_protons:    0
+  n_void_steps: 500
+  n_walkers:    5000
+  kick_size:    0.5
+  walk_precision: float32
+
+wavefunction:
+  mean_subtract: False
+  activation: celu
+  confinement: 0.5
+
+iterations: 1500
