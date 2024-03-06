@@ -1,4 +1,4 @@
-# JAX_QMC_2
+# JAX_QMC
 
 This repository is the public, scalable, JAX-based implementation of the software supporting the following papers:
 
